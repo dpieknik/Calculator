@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator</title>
+</head>
+<body>
+    <main>
+        <h1>Calculator</h1>
+        <script>
+
+			//This is a rudementary calculator where I chose to play with the switch case decision tree. I was happy to learn this logic exists in both JavaScript and Python
+			//and has become my preferred method in handling similar decision trees.
+
+			'use strict';
+
+			//prepare variables and set up user interface
+
+			let firstNumber = Number(prompt("Enter first number"));
+			let secondNumber = Number(prompt("Enter second number"));
+			let operand = window.prompt("Please enter desired calculation: \n '+' for Addition \n '-' for Subtraction \n '*' for Multiplication \n '/' for Division \n '%' for Modulus");
+			let result;
+
+			//Use switch case to build out calculator options
+
+			if (!Number.isNaN(firstNumber) && !Number.isNaN(secondNumber)) {
+				switch (operand) {
+					case "+": result = firstNumber + secondNumber; break;
+					case "-": result = firstNumber - secondNumber; break;
+					case "*": result = firstNumber * secondNumber; break;
+					case "/": result = firstNumber / secondNumber; break;
+					default: result = "Error: unknown operand";
+				}
+
+			//This also allowed for an easier error check
+
+			} else {
+				result = "Error: at least one of the entered values is not a number";
+			}
+			alert(result);  //Display Results
+
+        </script>
+    </main>
+</body>
+</html>

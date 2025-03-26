@@ -10,6 +10,7 @@ and has become my preferred method in handling similar decision trees.This proje
 
 - <b>Visual Studio Code</b> 
 - <b>JavaScript</b>
+- <b>HTML</b>
 
 <h2>Environments Used </h2>
 
